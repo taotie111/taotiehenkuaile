@@ -1,0 +1,11 @@
+<!--view组件通常作为容器来使用，类似于html 中的div标签
+    text组件显示一段文本，类似span标签
+    image组件显示一张图片，类似img标签，需要一个src属性，用来显示图片
+-->
+<view class='container'>
+  <image class='avatar' src='/images/avatar/avatar-1.png'></image>
+  <text class='motto'>Hello，橘子罐头(๑•̀ㅂ•́)و✧</text>
+  <view class='journey-container'> 
+    <text class='journey'>开启小程序之旅</text>
+  </view>
+</view>
