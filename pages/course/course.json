@@ -1,0 +1,8 @@
+{
+  "window": {
+ 
+  },
+  "usingComponents": {
+    "component": "../zujian/zujian"
+  }
+}

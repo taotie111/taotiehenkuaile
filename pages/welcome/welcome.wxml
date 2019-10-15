@@ -3,9 +3,14 @@
     image组件显示一张图片，类似img标签，需要一个src属性，用来显示图片
 -->
 <view class='container'>
-  <image class='avatar' src='/images/avatar/avatar-1.png'></image>
-  <text class='motto'>Hello，橘子罐头(๑•̀ㅂ•́)و✧</text>
-  <view class='journey-container'> 
-    <text class='journey'>开启小程序之旅</text>
+  <image class='avatar' src='/images/avatar/my.png'></image>
+  <text class='motto'>MOOC中西方文化交流平台</text>
+  <view catchtap="onTapJump" class='journey-container'> 
+    <button  class='journey' open-type="getUserInfo"  hover-class='true'> <text class='journey1' >登录</text></button>
   </view>
+  <text class='me'>V1.0</text>
+  <text class='rights'>欢迎您</text>
 </view>
+<!--   /* "navigationBarBackgroundColor": "#ECC0A8"*/ 是Json的橘色导航栏配置-->
+<!-- (๑•̀ㅂ•́)و✧ -->
+<!-- <text class='journey'>开启小程序之旅</text> -->

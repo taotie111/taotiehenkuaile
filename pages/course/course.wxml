@@ -1,0 +1,34 @@
+<!--pages/course/course.wxml-->
+<!-- <text>pages/course/course.wxml</text> -->
+<!-- 轮播图 （后期再修改替换图片）-->
+  <view class="slides">
+    <swiper circular autoplay indicator-dots>
+      <swiper-item wx:for="{{swiperList}}" wx:key="{{index}}">
+        <navigator>
+          <image src="{{item.imgSrc}}" mode="widthFix" ></image>
+        </navigator>>
+      </swiper-item>
+    </swiper>
+  </view>
+<!-- （每日推文）资源推送模块（内嵌视频模块，提供video audio组件，获取后台api进行数据绑定；内嵌提问模块，在文章下方评论区可评论）；另推文下方提供课件下载功能 -->
+<view class="list-title">
+    <view class="view-left">实战推荐</view>
+    <view class="view-right">更多></view>
+</view>
+<view class = "component" wx:for="{{resourcesList}}" wx:key="{{index1}}">
+      <view  class="resources" >
+                  <image src="{{item.imgSrc}}" class="resources-image"></image><!-- {{item.imgSrc}}--><!--  url从服务器获取 -->           
+                        <view >
+                            <text class="resources-text-lineone"> {item.text1}}\n\n</text>
+                            <text>{{item.text2}}</text>                  
+                        </view>                                           
+        <!-- 此处嵌入公共头部，统一显示模板样式 通过js数据绑定进行内容更新 js需获取来自后台的url -->
+      </view>
+      <view class="line"></view><!-- 分割线  -->  
+</view>
+<!-- 预习模块（提供签到功能）（内嵌视频模块，提供video audio组件，获取后台api进行数据绑定） -->
+<view class="preview">
+
+</view>
+
+<!-- 交流模块 （分讨论组讨论，类似聊天室功能） -->

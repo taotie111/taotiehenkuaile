@@ -1,0 +1,62 @@
+/* pages/course/course.wxss */
+text{
+  font-size: 30rpx;
+}
+/* 轮播图 */
+.slides{
+    margin-top: 0rpx;
+}
+.slides swiper{
+    height: 220rpx;
+    /* width: ; */
+}
+.slides navigator{
+    width: 100%;
+    height: 100%;
+}
+.slides image{
+    width: 100%;
+    height: 100%;
+}
+.resources{
+   display: flex;
+   flex-direction: row;
+}
+.resources-image{
+  height: 200rpx;
+  width: 300rpx;
+}
+.resources-text-lineone{
+  font-size: 60rpx;
+  color: black;
+}
+.line {
+  width: 100%;
+  height: 8rpx;
+  background: lightgray;
+
+}
+list-title{
+
+display: flex;
+
+flex-flow:row;
+
+}
+
+.list-title view{
+
+width:45%;
+
+display:inline-block;
+
+}
+
+.view-right{
+
+text-align:right;
+padding-right: 10rpx;
+color: rgb(173, 169, 169)；
+
+}
+/* */

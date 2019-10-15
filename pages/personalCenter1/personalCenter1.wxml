@@ -1,0 +1,64 @@
+<view class = "container">
+      <view class = "userInfo">
+          <image class="avatar" src='{{userInfo.avatarUrl}}' class="userInfo-image" ></image >
+          <text class="nickname">{{userInfo.nickName}}</text>
+      </view>
+       <view class ="line_sec"></view>
+
+      <view class="separate">
+        <block wx:for-items="{{orderItems}}" wx:key="name">
+              <view class="nav-item_sec" catchtap="toOrder" data-type="{{item.name}}" data-typeid="{                 {item.typeId}}">
+                 <image src="{{item.imageurl}}" class="nav-image" />
+                  <text class="nav-item_sec_2">{{item.name}}</text>
+              </view>
+          </block>
+      </view>
+
+      <view class ="line"></view>
+
+      <view class="separate_sec">
+          <view class="order" catchtap="toSetting">
+               <image src="../../images/icon/wx_app_cellphone.png" class="nav-image"></image>
+                <text class="nav-item">我的订单</text>
+          </view>
+          <view class ="line_sec"></view>
+          <view class="shopping" catchtap="toSetting">
+                <image src="../../images/icon/wx_app_cellphone.png" class="nav-image"></image>
+                <text class="nav-item">购物车</text>
+          </view>
+          <view class ="line_sec" catchtap="toSetting"></view>
+          <view class="coupon">
+                <image src="../../images/icon/wx_app_cellphone.png" class="nav-image"></image>
+                <text class="nav-item">优惠卷</text>
+          </view>
+      </view>
+
+      <view class ="line"></view>
+
+      <view class="separate_thr">
+        <view class="order" catchtap="toSetting">
+            <image src="../../images/icon/wx_app_cellphone.png" class="nav-image"></image>
+            <text class="nav-item">我的手记</text>
+        </view>
+        <view class ="line_sec"></view>
+        <view class="shopping" catchtap="toSetting">
+            <image src="../../images/icon/wx_app_cellphone.png" class="nav-image"></image>
+            <text class="nav-item">我的猿问</text>
+        </view>
+         <view class ="line_sec"></view>
+        <view class="coupon" catchtap="toSetting">
+            <image src="../../images/icon/wx_app_cellphone.png" class="nav-image"></image>
+            <text class="nav-item">我的课表</text>
+        </view>
+      </view>
+
+      <view class ="line"></view>
+
+      <view class="setting" catchtap="toSetting">
+            <image src="../../images/icon/wx_app_cellphone.png" class="nav-image"></image>
+            <text class="nav-item">设置</text>
+
+      </view>
+
+
+</view>

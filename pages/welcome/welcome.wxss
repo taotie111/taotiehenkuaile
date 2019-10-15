@@ -1,8 +1,14 @@
+page{
+   /* background-color: #ECC0A8; */
+   background-color: #87CEFA;
+}
+
 .container{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .avatar{
   width: 200rpx;
   height: 200rpx;
@@ -13,12 +19,12 @@
   margin-top: 100rpx;
   font-size:32rpx;
   font-weight: bold;
-  color:#9F4311;
+  color:#FFFFFF;
 }
 
 .journey-container{
   margin-top: 200rpx;
-  border: 1px solid #EA5A3C;
+  border: 1px solid #87CEFA;
   width: 200rpx;
   height: 80rpx;
   border-radius: 5px;
@@ -26,8 +32,31 @@
 }
 
 .journey{
+  border: none;
   font-size: 26rpx;
   font-weight: bold;
   line-height: 80rpx;
-  color: #EA5A3C;
+  background-color: #87CEFA;
+}
+
+.journey1{
+  font-size: 26rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: #FFFFFF;
+}
+
+.me{
+  margin-top: 230rpx;
+  color:#FFFFFF;
+}
+
+.rights{
+  margin-top: 10rpx;
+  color:#FFFFFF;
+}
+
+
+text{
+  font-family: Microsoft YaHei;
 }

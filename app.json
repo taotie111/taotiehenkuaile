@@ -1,5 +1,65 @@
 {
-  "pages":[
-    "pages/welcome/welcome"
-  ]
+  "enablePullDownRefresh": true,
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/course/course",
+    "pages/personalCenter/personalCenter",
+    "pages/personalCenter1/personalCenter1",
+    "pages/setting/setting",
+    "pages/MyOrder/MyOrder",
+    "pages/Shopping/Shopping",
+    "pages/Coupon/Coupon"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口"
+    }
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#87CEFA",
+    "backgroundColor": "#87CEFA"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#ECC0A8",
+    "color": "#fff",
+    "backgroundColor": "#87CEFA",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/course/course",
+        "text": "首页",
+        "iconPath": "images/icon/wx_app_news.png",
+        "selectedIconPath": "images/icon/wx_app_news@HL.png"
+      },
+      {
+        "pagePath": "pages/personalCenter1/personalCenter1",
+        "text": "发现",
+        "iconPath": "images/icon/wx_app_movie.png",
+        "selectedIconPath": "images/icon/wx_app_movie@HL.png"
+      },
+      {
+        "pagePath": "pages/personalCenter1/personalCenter1",
+        "text": "下载",
+        "iconPath": "images/icon/wx_app_movie.png",
+        "selectedIconPath": "images/icon/wx_app_movie@HL.png"
+      },
+      {
+        "pagePath": "pages/personalCenter1/personalCenter1",
+        "text": "我的",
+        "iconPath": "images/icon/wx_app_movie.png",
+        "selectedIconPath": "images/icon/wx_app_setting@HL.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 100000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "sitemapLocation": "sitemap.json"
 }

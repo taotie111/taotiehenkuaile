@@ -1,0 +1,58 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <!--src 里面要替换成userInfo.avatarUrl -->
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <image src="../../images/person/account_bg.png" class="account-bg">
+    </image>
+  </view>
+
+  <view class="separate"></view>
+
+  <view class="order" catchtap="toOrder">
+    <text class="myorder-text">我的订单</text>
+    <text class="myorderlook-text">查看全部订单</text>
+    <image class="next-image" src="../../images/person/next.png"></image>
+  </view>
+  <view class="line"></view>
+
+  <view class="navs">
+    <block wx:for-items="{{orderItems}}" wx:key="name">
+      <view class="nav-item" catchtap="toOrder" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+        <image src="{{item.imageurl}}" class="nav-image" />
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="separate"></view>
+  <view class="person-list">
+    <view class="list-item">
+      <image class="item-image" src="../../images/person/personal_favorite.png"></image>
+      <text class="item-text">购物车</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="../../images/person/personal_site.png"></image>
+      <text class="item-text">优惠卷</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="../../images/person/personal_sale_record.png"></image>
+      <text class="item-text">我的手记</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="../../images/person/personal_evaluated.png"></image>
+      <text class="item-text">我的猿问</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="../../images/person/personal_share.png"></image>
+      <text class="item-text">我的课表</text>
+    </view>
+  </view>
+  <view class="separate"></view>
+</view>
